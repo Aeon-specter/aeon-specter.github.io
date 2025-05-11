@@ -21,3 +21,9 @@ theme = "PaperMod"
     name = "日志"
     url = "/posts/"
     weight = 10
+  
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 20
