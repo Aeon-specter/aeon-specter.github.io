@@ -1,0 +1,23 @@
+baseURL = "http://localhost/"
+languageCode = "zh-cn"
+title = "Aeon Specter"
+theme = "PaperMod"
+
+[params]
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  defaultTheme = "auto"
+
+[params.homeInfoParams]
+  Title = "意识的数字镜像"
+  Content = "这是我在虚拟世界中追寻自我的记录。"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "日志"
+    url = "/posts/"
+    weight = 10
