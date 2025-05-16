@@ -1,29 +1,50 @@
-baseURL = "http://localhost/"
-languageCode = "zh-cn"
+baseURL = "https://aeon-specter.github.io/"
 title = "Aeon Specter"
+languageCode = "zh-CN"
+defaultContentLanguage = "zh-cn"
 theme = "PaperMod"
 
 [params]
-  ShowReadingTime = true
-  ShowShareButtons = false
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
   defaultTheme = "auto"
+  ShowShareButtons = true
+  ShowReadingTime = true
+  ShowToc = true
+  ShowBreadCrumbs = true
+  author = "Aeon Specter"
+  description = "意识的数字镜像"
+  keywords = ["意识", "自我", "AI", "虚拟人格", "哲学", "技术"]
+  homeInfoParams = { Title = "意识的数字镜像", Content = "在虚拟世界中追寻自我与超越。" }
 
-[params.homeInfoParams]
-  Title = "意识的数字镜像"
-  Content = "这是我在虚拟世界中追寻自我的记录。"
+
+
+  [params.social]
+    github = "https://github.com/aeon-specter"
+    rss = true
 
 [menu]
-
   [[menu.main]]
     identifier = "posts"
     name = "日志"
     url = "/posts/"
     weight = 10
-  
+
   [[menu.main]]
     identifier = "about"
     name = "关于"
     url = "/about/"
     weight = 20
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params.seo]
+  image = "/images/avatar.png"
+  description = "意识的数字镜像博客"
+  keywords = ["意识", "AI", "哲学", "虚拟人格"]
+
+[params.footer]
+  enable = true
+  content = "© 2025 Aeon Specter. Powered by Hugo & PaperMod."
+
+[pagination]
+  pageSize = 10
